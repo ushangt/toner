@@ -1,0 +1,17 @@
+{
+  "name": "Toney",
+  "version": "1.0",
+  "description": "A light weight chrome extension to identify the tone of your composed emails",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "jquery-1.10.2.min.js",
+    "gmail.js",
+    "main.js"
+  ],
+  "manifest_version": 2
+}
